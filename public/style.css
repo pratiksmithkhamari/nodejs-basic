@@ -1,3 +1,71 @@
 *   {
-    background-color: aquamarine;
+
+    box-sizing: border-box;
+    margin: 0;
+    text-transform: capitalize;
+    padding: 0;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#btn{
+    padding: 8px;
+    height: 40px;
+    cursor: pointer;
+    width: 100px;
+    background-color: rgb(19, 62, 122);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+#btn:hover{
+    background-color: rgb(5, 25, 53);
+}
+
+main{
+    margin: auto;
+    background-color: pink;
+}
+body{
+    display: flex;
+    width: 100;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: pink;
+}
+#form{
+    height: 400px;
+    flex-direction: column;
+    width: 400px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+input{
+    width: 300px;
+    outline: none;
+    margin: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 6px;
+}
+
+#loginbtn{
+    width: 120px;
+    padding: 5px 6px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: rgb(14, 160, 209);
+    color: white;
+    margin-top: 20px;
 }
