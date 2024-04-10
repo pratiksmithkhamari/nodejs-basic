@@ -6,25 +6,19 @@
     <title>login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    .error{
-        color: red;
-        text-align: right;
-        font-size: 0.8rem;    }
-</style>
 <body>
     <main>
     
     
-    <form id="form" method="post" action="/login">
-        <h1 >log-in</h1>
-        
+    <form id="form" method="post" >
+        <h1 >Register</h1>
+        <label for="name">Name</label>
+    <input type="text" name="name" placeholder="enter name">
     <label for="email">Email</label>
-    <input type="email" name="email"> 
+    <input type="email" name="email" placeholder="enter email"> 
     <label for="email">Password</label>
     <input type="password" name="password" placeholder="enter password"> 
-    <p class="error"><%= locals.message %></p>
-    <button id="loginbtn">login</button>
+    <button id="loginbtn">sign up</button>
   </form>
 </main>
 </body>

@@ -6,9 +6,28 @@
     <title>login</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction:column;
+        
+    }
+</style>
 <body>
+    <div>
+    <h2>hiii <%= name %></h2>
     <form class="login" method="get" action="/logout">
         <button id="btn">log-out</button>
     </form>
+</div>
 </body>
 </html>

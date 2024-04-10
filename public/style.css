@@ -37,7 +37,7 @@ body{
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    background-color: pink;
+    background-color: rgb(177, 227, 247);
 }
 #form{
     height: 400px;
@@ -57,7 +57,9 @@ input{
     border-bottom: 1px solid black;
     padding: 6px;
 }
-
+h1{
+    margin-bottom: 30px;
+}
 #loginbtn{
     width: 120px;
     padding: 5px 6px;

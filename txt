@@ -9,3 +9,5 @@ for make cookie use res.cookie()
 4) after that if the user logout we should delete the cookie value.
 
 5) after that we use the next() method which is a middleware if the user login we call the next() method which loads the needed page.
+
+6) _id importance role for hiding the details from browser and connetion to mongodb database
