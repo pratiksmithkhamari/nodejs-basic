@@ -3,7 +3,7 @@ import path from "path";
 import mongoose, { Schema } from "mongoose";
 import cookieParser from "cookie-parser";
 import jwt from "jsonwebtoken";
-
+import bcrypt from "bcrypt"
 const app = express();
 
 const PORT = 3000;
@@ -64,10 +64,12 @@ app.post("/register", async (req, res) => {
   if (user) {
     return res.redirect("/login");
   }
+  const hashedPass = await bcrypt.hash(password,10)
+
   user = await Entry.create({
     name,
     email,
-    password
+    password:hashedPass,
   });
 
 
@@ -116,7 +118,8 @@ let user =await Entry.findOne({email})
 
  if(!user)  return res.redirect("/register")
  
-  let enterPass= user.password === password
+  let enterPass= await bcrypt.compare(password,user.password)
+  
    if(!enterPass) return res.render("login.ejs",{message:"*incorrect password"})
    
    const token = jwt.sign({ _id: user._id }, "ksdjfkjskdf");

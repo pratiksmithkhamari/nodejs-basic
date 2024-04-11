@@ -11,3 +11,7 @@ for make cookie use res.cookie()
 5) after that we use the next() method which is a middleware if the user login we call the next() method which loads the needed page.
 
 6) _id importance role for hiding the details from browser and connetion to mongodb database
+
+7)bcrypt.hash(): Utilize this function to generate a secure hash of a plaintext password. Accepts the plaintext password and an optional salt factor as input parameters, returning the hashed password asynchronously.
+
+8)bcrypt.compare(): Employ this function to compare a plaintext password with its hashed counterpart. It facilitates secure authentication by verifying the equality of the plaintext password and the stored hashed password.
